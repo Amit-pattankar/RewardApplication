@@ -10,6 +10,38 @@
 - Install mysql db locally and run it . change the db settings in application.properties file.
 - copy the data from sql.txt and run it in your mysql work bench and run it.
 
+#Tools used for developing this application.
 
+- Eclipse
+- MySQL workbench
+- Postman
+- Gradle (build tool)
+
+#Technology used for this application.
+
+- Java 8
+- Spring Rest
+- SQL
+
+#Detail about application architecture
+
+- RestController : used for rest API  endpoint.
+- Service : used for build logic.
+- Repository : used to communicate with DB.
+
+#Steps to setup application in your system.
+
+- Clone projects in your local Using git clone <git-project-url>
+- Open project in any IDE with gradle project.
+- Change the DB name, username, password in application.properties file for Mysql
+- Table will be automatically created in DB which you will give in dataSource url in application properties.
+- You have to insert data into table for that use follow the instructions below.
+- there is one file called sql.txt in project strcuture.
+- copy and paste into your mysql workbench and select all and run and check data is inserted into
+table or not.
+- Now you are good to run your application.
+
+
+#Endpoint link
 ```
  http://localhost:8080/customers/{customerId}/rewards
